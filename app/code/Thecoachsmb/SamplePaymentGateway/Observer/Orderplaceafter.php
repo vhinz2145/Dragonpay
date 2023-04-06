@@ -31,7 +31,7 @@ class Orderplaceafter implements ObserverInterface
         $params = array(
             'merchantid' => COMWORKS,
             'txnid' => $order->getOrderIncrementId(),
-            'amount' => '1',
+            'amount' => $order->getGrandTotalAmount(),
             'ccy' => $order->getCurrencyCode(),
             'description' => 'My order description.',
             'email' => $address->getEmail()
