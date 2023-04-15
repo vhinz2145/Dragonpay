@@ -35,7 +35,6 @@ class Orderplaceafter implements ObserverInterface
             'ccy' => $order->getCurrencyCode(),
             'description' => 'My order description.',
             'email' => $address->getEmail()
-            //7aa0e0f
         );
         }
             $this->_redirect($url,$params);
